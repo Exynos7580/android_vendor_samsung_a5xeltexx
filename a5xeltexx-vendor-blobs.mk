@@ -18,7 +18,7 @@
 LOCAL_PATH := vendor/samsung/a5xeltexx
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm43438A1_V0051.0217.hcd:system/vendor/firmware/bcm43438A1_V0051.0217.hcd \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm43454_V0133.0213.hcd:system/vendor/firmware/bcm43454_V0133.0213.hcd \
     $(LOCAL_PATH)/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     $(LOCAL_PATH)/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.universal7580.so:system/lib/hw/camera.universal7580.so \
