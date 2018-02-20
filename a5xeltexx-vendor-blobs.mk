@@ -161,4 +161,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
     $(LOCAL_PATH)/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
     $(LOCAL_PATH)/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/fingerprint.universal7580.so:system/lib/hw/fingerprint.universal7580.so
+    $(LOCAL_PATH)/proprietary/lib/hw/fingerprint.universal7580.so:system/lib/hw/fingerprint.universal7580.so \
+    $(LOCAL_PATH)/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
+    $(LOCAL_PATH)/proprietary/etc/Tfa9897.cnt:system/etc/Tfa9897.cnt
+
