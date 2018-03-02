@@ -144,6 +144,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt_FD:system/etc/wifi/nvram_mfg.txt_FD \
     $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt_FD:system/etc/wifi/nvram_net.txt_FD \
     $(LOCAL_PATH)/proprietary/etc/sec_s3fwrn5s_rfreg.bin:system/etc/sec_s3fwrn5s_rfreg.bin \
+    $(LOCAL_PATH)/proprietary/etc/sec_s3fwrn5s_rfreg_thl.bin:system/etc/sec_s3fwrn5s_rfreg_thl.bin \
     $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.universal7580.so:system/lib/hw/nfc_nci.universal7580.so \
     $(LOCAL_PATH)/proprietary/vendor/firmware/sec_s3fwrn5s_firmware.bin:system/vendor/firmware/sec_s3fwrn5s_firmware.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/ram_patch.fw:system/vendor/firmware/ram_patch.fw \
