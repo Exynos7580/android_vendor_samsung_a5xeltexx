@@ -17,19 +17,30 @@
 
 LOCAL_PATH := vendor/samsung/a5xeltexx
 
+###########################
+# Bluetooth
+##########################
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm43454_V0147.0245.hcd:system/vendor/firmware/bcm43454_V0147.0245.hcd \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm43454_V0147.0245.hcd:system/vendor/firmware/bcm43454_V0147.0245.hcd
+
+###########################
+# Camera
+##########################
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     $(LOCAL_PATH)/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.universal7580.so:system/lib/hw/camera.universal7580.so \
     $(LOCAL_PATH)/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
-    $(LOCAL_PATH)/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
-    $(LOCAL_PATH)/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     $(LOCAL_PATH)/proprietary/vendor/firmware/setfile_3l2.bin:system/vendor/firmware/setfile_3l2.bin \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/setfile_5e3.bin:system/vendor/firmware/setfile_5e3.bin \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/fimc_is_fd.bin:system/vendor/firmware/fimc_is_fd.bin \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/fimc_is_fw2_3l2.bin:system/vendor/firmware/fimc_is_fw2_3l2.bin \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/setfile_5e3.bin:system/vendor/firmware/setfile_5e3.bin
+
+###########################
+# Mobicore
+##########################
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/app/020a0000000000000000000000000000.drbin:system/app/020a0000000000000000000000000000.drbin \
     $(LOCAL_PATH)/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     $(LOCAL_PATH)/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
@@ -54,7 +65,83 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
     $(LOCAL_PATH)/proprietary/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
     $(LOCAL_PATH)/proprietary/app/mcRegistry/FFFFFFFFD00000000000000000000016.tlbin:system/app/mcRegistry/FFFFFFFFD00000000000000000000016.tlbin \
-    $(LOCAL_PATH)/proprietary/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
+    $(LOCAL_PATH)/proprietary/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001e.tlbin
+
+###########################
+# Graphics
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/fimc_is_fd.bin:system/vendor/firmware/fimc_is_fd.bin \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/fimc_is_fw2_3l2.bin:system/vendor/firmware/fimc_is_fw2_3l2.bin
+
+###########################
+# Radio
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so
+
+###########################
+# Sensors
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/hw/sensors.universal7580.so:system/lib/hw/sensors.universal7580.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libyasalgo.so:system/vendor/lib/libyasalgo.so \
+    $(LOCAL_PATH)/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so
+
+###########################
+# Wi-Fi
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt_FD:system/etc/wifi/nvram_mfg.txt_FD \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt_FD:system/etc/wifi/nvram_net.txt_FD \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/ram_patch.fw:system/vendor/firmware/ram_patch.fw
+
+###########################
+# NFC
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/sec_s3fwrn5s_rfreg.bin:system/etc/sec_s3fwrn5s_rfreg.bin \
+    $(LOCAL_PATH)/proprietary/etc/sec_s3fwrn5s_rfreg_thl.bin:system/etc/sec_s3fwrn5s_rfreg_thl.bin \
+    $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.universal7580.so:system/lib/hw/nfc_nci.universal7580.so \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/sec_s3fwrn5s_firmware.bin:system/vendor/firmware/sec_s3fwrn5s_firmware.bin
+
+###########################
+# Fingerprint
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/hw/fingerprint.universal7580.so:system/lib/hw/fingerprint.universal7580.so \
+    $(LOCAL_PATH)/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
+    $(LOCAL_PATH)/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
+    $(LOCAL_PATH)/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
+    $(LOCAL_PATH)/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so
+    
+
+###########################
+# Audio Amplifier
+##########################
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
+    $(LOCAL_PATH)/proprietary/etc/Tfa9897.cnt:system/etc/Tfa9897.cnt
+
+###########################
+# NXP
+##########################
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt \
     $(LOCAL_PATH)/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
     $(LOCAL_PATH)/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
@@ -132,28 +219,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
     $(LOCAL_PATH)/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     $(LOCAL_PATH)/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
-    $(LOCAL_PATH)/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
-    $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/sensors.universal7580.so:system/lib/hw/sensors.universal7580.so \
-    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt_FD:system/etc/wifi/nvram_mfg.txt_FD \
-    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt_FD:system/etc/wifi/nvram_net.txt_FD \
-    $(LOCAL_PATH)/proprietary/etc/sec_s3fwrn5s_rfreg.bin:system/etc/sec_s3fwrn5s_rfreg.bin \
-    $(LOCAL_PATH)/proprietary/etc/sec_s3fwrn5s_rfreg_thl.bin:system/etc/sec_s3fwrn5s_rfreg_thl.bin \
-    $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.universal7580.so:system/lib/hw/nfc_nci.universal7580.so \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/sec_s3fwrn5s_firmware.bin:system/vendor/firmware/sec_s3fwrn5s_firmware.bin \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/ram_patch.fw:system/vendor/firmware/ram_patch.fw \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libyasalgo.so:system/vendor/lib/libyasalgo.so \
-    $(LOCAL_PATH)/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
-    $(LOCAL_PATH)/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
-    $(LOCAL_PATH)/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
-    $(LOCAL_PATH)/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/fingerprint.universal7580.so:system/lib/hw/fingerprint.universal7580.so \
-    $(LOCAL_PATH)/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
-    $(LOCAL_PATH)/proprietary/etc/Tfa9897.cnt:system/etc/Tfa9897.cnt
-
+    $(LOCAL_PATH)/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt
