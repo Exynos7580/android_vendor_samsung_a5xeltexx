@@ -131,7 +131,7 @@ PRODUCT_COPY_FILES += \
 ##########################
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/fingerprint.universal7580.so:system/lib/hw/fingerprint.universal7580.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
     $(LOCAL_PATH)/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
     $(LOCAL_PATH)/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
     $(LOCAL_PATH)/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
